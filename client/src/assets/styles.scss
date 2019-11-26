@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+.nav__ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 15px 0;
+  align-items: center;
+  background: rgba(19, 35, 47, 0.9);
+  margin: 0;
+
+  li {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.nav__li--logo {
+  margin-right: auto;
+  a {
+    font-size: 1.3rem;
+  }
+}
+////////////////////////////////////
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main_green: #1ab188;
+$main-light: lighten($main_green, 5%);
+$main-dark: darken($main_green, 5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+.form-container {
+  background: rgba($form-bg, 0.9);
+  padding: 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 4px rgba($form-bg, 0.3);
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+
+  &__tab-group {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+
+  &__tab-button {
+    padding: 15px 50px;
+    background: rgba(160, 179, 176, 0.25);
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+
+  form {
+      height: 250px;
+
+      label {
+          display: block;
+          color: white;
+          margin-bottom: 4px;
+      }
+
+      input {
+          width: 100%;
+          border: 1px solid #a0b3b0;
+          background: none;
+          color: white;
+          padding: 5px 10px;
+          margin-bottom: 10px;
+          font-size: 1rem;
+      }
+  }
+
+}
+
+#active-form-tab-button {
+    background: $main_green;
+}
+
+#form-container__submit {
+    display: block;
+    margin-top: 25px;
+    background: $main_green;
+    border: none;
+    padding: 10px 0;
+}
